@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Slideshow with Transformation</title>
+  <style>
+    .slides-container{
+        background-color: aquamarine;
+        width: 300px;
+        display: flex;
+    }
+    .slideshow-container{
+        background-color: rgb(77, 82, 81);
+        width: 300px;
+        overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <div class="slides-container">
+    </div>
+    <button id="prevSlide">Previous</button>
+    <button id="nextSlide">Next</button>
+  </div>
+
+  <script >
+
+//   document.addEventListener('DOMContentLoaded',
+  
+  function gg() {
+  const slidesContainer = document.querySelector('.slides-container');
+  let currentPosition = 0;
+
+  const Data = [
+    {
+      "Name": "Munir",
+      "Email": "munirahmad77@gmail.com",
+      "Level": "developer",
+      "Id": 1,
+      "Status": false
+    },
+    {
+      "Name": "Munir",
+      "Email": "munirahmad77@gmail.com",
+      "Level": "developer",
+      "Id": 2,
+      "Status": false
+    },
+    {
+      "Name": "Munir",
+      "Email": "munirahmad77@gmail.com",
+      "Level": "developer",
+      "Id": 3,
+      "Status": false
+    },
+    {
+      "Name": "Munir",
+      "Email": "munirahmad77@gmail.com",
+      "Level": "developer",
+      "Id": 4,
+      "Status": false
+    }
+  ];
+
+  function updateSlides() {
+    slidesContainer.innerHTML = ""; // Clear the existing content
+    Data.forEach((item) => {
+      const slideDiv = document.createElement("div");
+      slideDiv.className = "slide";
+      const slideInfo = document.createElement("p");
+      slideInfo.textContent = `Name: ${item.Name}, Email: ${item.Email}, Level: ${item.Level}, ID: ${item.Id}, Status: ${item.Status}`;
+      slideDiv.appendChild(slideInfo);
+      slidesContainer.appendChild(slideDiv);
+    });
+  }
+
+
+  function moveSlides(distance) {
+    currentPosition += distance;
+    //  slides.style.transition = "";
+    slidesContainer.style.transform = `translateX(${currentPosition}px)`;
+
+  }
+
+  document.getElementById('prevSlide').addEventListener('click', () => {
+    moveSlides(300); // Move 200px to the left
+  });
+
+  document.getElementById('nextSlide').addEventListener('click', () => {
+    moveSlides(-300); // Move 200px to the right
+  });
+
+  updateSlides();
+}
+gg()
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.imgclass {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* background-color: red; */
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.imgclass2 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  /* background-color: red; */
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.table {
+  border-collapse: collapse;
+  /* border: 2px solid red; */
+  /* border-bottom:  solid rgb(68, 64, 64); */
+
+  width: 80%;
+
+  margin: auto;
+}
+.table2 {
+  border-collapse: collapse;
+  border-bottom: 1px solid rgb(68, 64, 64);
+  border-top: 1px solid rgb(68, 64, 64);
+  background-color: rgb(222, 222, 222);
+
+  width: 80%;
+  height: 50px;
+  margin: auto;
+}
+.Member {
+  /* background-color: rgb(6, 171, 171); */
+  width: 340px;
+  padding-left: 10px;
+  display: flex;
+  /* font-size: px; */
+  justify-content: space-between;
+}
+
+/* .emtydt{
+    width: 200px; */
+/* } */
+.Function {
+  /* background-color: rgb(52, 35, 35); */
+  display: flex;
+
+  justify-content: space-between;
+  color: #000000;
+
+  width: 140px;
+
+  padding: 20px 0px;
+}
+.Function h3 {
+}
+.Status {
+  /* background-color: rgb(89, 0, 255); */
+  width: 200px;
+  padding-left: 90px;
+}
+.Employed {
+  /* background-color: aqua; */
+  width: 200px;
+}
+
+.tr {
+  border-collapse: collapse;
+  border-bottom: 1px solid rgb(73, 73, 73);
+  height: 30px;
+}
+tr {
+  border-collapse: collapse;
+  border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+.title {
+  /* background-color: rgb(240, 255, 24); */
+  width: 70%;
+  margin-left: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.emli {
+  /* background-color: rgb(113, 113, 120); */
+  padding-top: 20px;
+  font-size: 20px;
+}
+.katagory_leval {
+  /* background-color: rgb(69, 82, 78); */
+  width: 300px;
+  padding-left: 30px;
+}
+.img_title {
+  width: 250px;
+  display: flex;
+  /* justify-content: space-between; */
+  /* background-color: rgb(255, 136, 0); */
+}
+
+.Edit {
+  background-color: rgb(48, 213, 15);
+  margin-bottom: 20px;
+  padding: 7px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+}
+.newadd {
+  margin-top: 20px;
+
+  background-color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  border-radius: 6px;
+  height: 50%;
+  color: #fff;
+  border: none;
+}
+
+.addShow {
+  background-color: rgba(4, 41, 14, 0.669);
+  height: 440px;
+  width: 70%;
+  margin: auto;
+  padding-top: 70px;
+  border: none;
+}
+.addShow input {
+  height: 40px;
+  padding-left: 40px;
+  margin-top: 10px;
+  width: 70%;
+  margin-left: 90px;
+}
+.editSave {
+  padding: 10px 100px;
+  margin: 0px 30px;
+  margin-left: 100px;
+  font-size: 20px;
+  background-color: rgb(30, 164, 6);
+  color: #fff;
+}
+.Close_showEdit {
+  padding: 10px 100px;
+  margin: 0px 30px;
+  margin-left: 100px;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(139, 27, 5);
+}
+.adddiv {
+  padding-top: 20px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.adddiv div,
+h1 {
+  /* background-color: red; */
+  height: 60%;
+}
+.opneEDItdialog {
+  padding: 100px 300px;
+  margin: auto;
+  border: none;
+
+  background-color: rgba(2, 2, 2, 0.42);
+}
+.Editimge {
+  height: 30px;
+  width: 30px;
+}
+.editBTN {
+  padding: 20px 50px;
+  background-color: rgb(11, 141, 248);
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.deleteBTN {
+  padding: 20px 40px;
+  background-color: rgb(248, 11, 11);
+  color: #fff;
+  border: none;
+  line-clamp: 10px;
+}
+.Close_EDIt_dialog {
+  padding: 20px 40px;
+  background-color: rgb(116, 47, 47);
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+.statush4 {
+  /* background-color: rgb(0, 255, 255); */
+  text-align: center;
+  width: 100px;
+  position: relative;
+  top: -10px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-radius: 7px;
+}
+.unactive {
+  background-color: rgba(128, 128, 128, 0.201);
+  padding: 5px 10px;
+  color: rgb(90, 90, 90);
+  right: 7px;
+  position: relative;
+  border-radius: 5px;
+}
+.active {
+  background-color: rgba(1, 219, 1, 0.313);
+  padding: 5px 10px;
+  color: darkgreen;
+  border-radius: 5px;
+}
+.status {
+  background-color: rgb(183, 122, 122);
+  height: 20px;
+  padding: 5px;
+
+  border-radius: 7px;
+}
+.slederall {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(214, 235, 235);
+  position: relative;
+  overflow: hidden;
+
+  padding-top: 20px;
+}
+
+.slideshow-container {
+  background-color: rgb(243, 243, 7);
+  height: 90%;
+  width: 30%;
+  /* padding-top: 5px; */
+
+  /* padding-left: 20px; */
+  margin: auto;
+  /* border-radius: 50%; */
+
+  /* overflow: hidden; */
+}
+
+
+.slides-container {
+  background-color: rgb(255, 0, 0) ;
+  display: flex;
+  /* border-radius: 50%; */
+  /* width:1000px; */
+width: 400%;
+overflow: hidden;
+
+  height: 570px;
+  gap: 5px;
+  /* margin-top: 10px; */
+  /* border-radius: 50%; */
+  /* margin-left: 7px; */
+}
+.imgdiv{
+  width: 50%;
+
+
+  /* background-color: aqua; */
+}
+.imgdiv img {
+  /* margin-left: 80px; */
+  margin: 0px 40px;
+
+
+  /* background-color: rgb(/158, 139, 139) ; */
+  /* display: flex; */
+  /* margin-top: 60px; */
+  /* width: 60%; */
+  
+ 
+
+  height: 100%;
+  border-radius: 50%;
+}
+.sleder_name h1 {
+  color: rgb(224, 20, 20);
+  /* height: 30px ;
+
+margin: 0px 40px;
+text-align: center; */
+  width: 100%;
+}
+
+.sleder_nameall {
+  /* background-color: rgb(171, 167, 50); */
+  width: 16%;
+  padding-top: 5px;
+  height: 200px;
+
+  margin: auto;
+
+  overflow: hidden;
+}
+.sleder_name {
+  
+  /* background-color: rgb(238, 230, 240); */
+  height: 200px;
+ padding:20px ;
+display: flex;
+width: 450%;
+  /* overflow: hidden; */
+}
+.sleder_name p {
+  width: 90%;
+ 
+ /* margin: 0px 40px ; */
+  /* margin: auto; */
+font-size: 20px;
+  /* background-color: rgb(78, 78, 65); */
+  /* margin: 0px 4px; */
+  margin-left: 40px;
+ /* color: rgb(215, 8, 8); */
+
+  /* overflow: hidden; */
+}
+#prevSlide{
+  padding: 10px 20px ;
+  margin-left: 200px;
+  position: absolute;
+  right: 10px;
+bottom: 40%; 
+
+}
+#nextSlide{
+  position: absolute;
+  /* margin-left: 30px; */
+  left: 10px;
+  padding: 10px 20px ;
+bottom: 40%; 
+
+}
+
+.hhhh{
+  margin: 0px 10px;
+  height: 90%;
+  width: 25%;
+  background-color: darkgoldenrod;
+}
